@@ -1,0 +1,20 @@
+$color: #FFA501;
+$color-text: #000;
+$menu-line: #151812;
+$color-nav: #FFF;
+$dang: #EE0909FF;
+$role: #2306D6;
+
+@mixin circle {
+  &:before {
+    content: '';
+    position: absolute;
+    border-radius: 100%;
+    width: 36px;
+    height: 36px;
+    background: $color;
+    z-index: -1;
+    top: -9px;
+    left: 0;
+  }
+}

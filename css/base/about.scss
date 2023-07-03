@@ -1,0 +1,95 @@
+@import '../color';
+
+.about {
+  position: relative;
+  background: url('../../image/background.jpg') no-repeat 50%/cover;
+  padding: 206px 0 362px;
+
+  &__title {
+    color: $color-text;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    width: 532px;
+    margin-top: 9px;
+  }
+
+  &__subtitle {
+    position: relative;
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 10px;
+    z-index: 2;
+    @include circle;
+  }
+
+  &__buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .about {
+    &__wrapper {
+      max-width: 900px;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .about {
+    &__wrapper {
+      max-width: 700px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .about {
+    &__wrapper {
+      max-width: 560px;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .about {
+    &__wrapper {
+      max-width: 400px;
+    }
+
+    &__title {
+      font-size: 24px;
+      width: 300px;
+      line-height: normal;
+    }
+
+    &__buttons {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .about {
+    &__wrapper {
+      max-width: 300px;
+    }
+
+    &__title {
+      width: 238px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    &__wrapper {
+      max-width: 241px;
+    }
+  }
+}

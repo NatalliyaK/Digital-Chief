@@ -1,0 +1,41 @@
+.social {
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 338px;
+  z-index: 3;
+  top: 226px;
+  left: 50px;
+
+  &__line {
+    width: 2px;
+    height: 70px;
+    background-color: $color-text;
+  }
+
+  &__text {
+    height: 148px;
+    width: 25px;
+
+      & span {
+        transform: rotate(-90deg) translate(-30%, -260%);
+        display: block;
+        width: 148px;
+      }
+  }
+}
+
+@media (max-width: 1300px) {
+  .social {
+    left: 25px;
+  }
+}
+
+@media (max-width: 580px) {
+  .social {
+    display: none;
+  }
+}

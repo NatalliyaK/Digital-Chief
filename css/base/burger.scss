@@ -1,0 +1,30 @@
+@import '../color';
+
+.burger {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+
+    &__item {
+        display: block;
+        background: $menu-line;
+        width: 30px;
+        height: 3px;
+    }
+
+    &__item:nth-child(2) {
+      width: 36px;
+    }
+}
+
+@media (max-width: 780px) {
+  .burger {
+    right: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../color';
+
+.input {
+  outline: 0;
+  &.error {
+    border-color: $dang;
+  }
+}
+
+.checkbox {
+    &__label {
+      user-select: none;
+      color: $color-text;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal
+    }
+     &__politic {
+      color: $role;
+    }
+}
+
+.contacts__checkbox .checkbox__label {
+  position: static;
+}
+
+.error {
+  color: $dang;
+}

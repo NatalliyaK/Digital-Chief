@@ -1,0 +1,8 @@
+.input {
+  outline: 0;
+}
+.input.error {
+  border-color: red;
+}
+
+/*# sourceMappingURL=input.css.map */
